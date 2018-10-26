@@ -14,7 +14,6 @@ class Gift extends Component {
     };
 
     render(){
-        console.log(this.state);
         return (
             <form>
                 <label htmlFor="person">Person:</label>

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Gift from './Gift';
 
 
 class App extends Component {
@@ -19,8 +20,9 @@ class App extends Component {
 
     render(){
         const giftsList = this.state.gifts.map( gift => {
-           return ( <div key={gift.id}>{`gift #${gift.id}`}</div>)
+           return ( <Gift key={gift.id}>{`gift #${gift.id}`}</Gift>)
         });
+
         return(
             <div>
                 <h2>Gift Giver</h2>

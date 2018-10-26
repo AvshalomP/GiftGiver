@@ -40,11 +40,6 @@ ShallowWrapper {
           onChange={[Function]}
           type="text"
         />,
-        <button
-          type="submit"
-        >
-          Submit
-        </button>,
       ],
     },
     "ref": null,
@@ -101,18 +96,6 @@ ShallowWrapper {
         "rendered": null,
         "type": "input",
       },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": "Submit",
-          "type": "submit",
-        },
-        "ref": null,
-        "rendered": "Submit",
-        "type": "button",
-      },
     ],
     "type": "form",
   },
@@ -145,11 +128,6 @@ ShallowWrapper {
             onChange={[Function]}
             type="text"
           />,
-          <button
-            type="submit"
-          >
-            Submit
-          </button>,
         ],
       },
       "ref": null,
@@ -205,18 +183,6 @@ ShallowWrapper {
           "ref": null,
           "rendered": null,
           "type": "input",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": "Submit",
-            "type": "submit",
-          },
-          "ref": null,
-          "rendered": "Submit",
-          "type": "button",
         },
       ],
       "type": "form",
