@@ -3,7 +3,14 @@
 exports[`Gift should render properly 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Gift />,
+  Symbol(enzyme.__unrendered__): <Gift
+    gift={
+      Object {
+        "id": 1,
+      }
+    }
+    handleRemove={[MockFunction]}
+  />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -18,28 +25,36 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <label
-          htmlFor="person"
+        <form>
+          <label
+            htmlFor="person"
+          >
+            Person:
+          </label>
+          <input
+            className="input-person"
+            name="person"
+            onChange={[Function]}
+            type="text"
+          />
+          <label
+            htmlFor="present"
+          >
+            Present:
+          </label>
+          <input
+            className="input-present"
+            name="present"
+            onChange={[Function]}
+            type="text"
+          />
+        </form>,
+        <button
+          className="btn-remove"
+          onClick={[Function]}
         >
-          Person:
-        </label>,
-        <input
-          className="input-person"
-          name="person"
-          onChange={[Function]}
-          type="text"
-        />,
-        <label
-          htmlFor="present"
-        >
-          Present:
-        </label>,
-        <input
-          className="input-present"
-          name="present"
-          onChange={[Function]}
-          type="text"
-        />,
+          Remove Gift
+        </button>,
       ],
     },
     "ref": null,
@@ -49,55 +64,103 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "Person:",
-          "htmlFor": "person",
+          "children": Array [
+            <label
+              htmlFor="person"
+            >
+              Person:
+            </label>,
+            <input
+              className="input-person"
+              name="person"
+              onChange={[Function]}
+              type="text"
+            />,
+            <label
+              htmlFor="present"
+            >
+              Present:
+            </label>,
+            <input
+              className="input-present"
+              name="present"
+              onChange={[Function]}
+              type="text"
+            />,
+          ],
         },
         "ref": null,
-        "rendered": "Person:",
-        "type": "label",
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Person:",
+              "htmlFor": "person",
+            },
+            "ref": null,
+            "rendered": "Person:",
+            "type": "label",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "input-person",
+              "name": "person",
+              "onChange": [Function],
+              "type": "text",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "input",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Present:",
+              "htmlFor": "present",
+            },
+            "ref": null,
+            "rendered": "Present:",
+            "type": "label",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "input-present",
+              "name": "present",
+              "onChange": [Function],
+              "type": "text",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "input",
+          },
+        ],
+        "type": "form",
       },
       Object {
         "instance": null,
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "className": "input-person",
-          "name": "person",
-          "onChange": [Function],
-          "type": "text",
+          "children": "Remove Gift",
+          "className": "btn-remove",
+          "onClick": [Function],
         },
         "ref": null,
-        "rendered": null,
-        "type": "input",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": "Present:",
-          "htmlFor": "present",
-        },
-        "ref": null,
-        "rendered": "Present:",
-        "type": "label",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "className": "input-present",
-          "name": "present",
-          "onChange": [Function],
-          "type": "text",
-        },
-        "ref": null,
-        "rendered": null,
-        "type": "input",
+        "rendered": "Remove Gift",
+        "type": "button",
       },
     ],
-    "type": "form",
+    "type": "div",
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
@@ -106,28 +169,36 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <label
-            htmlFor="person"
+          <form>
+            <label
+              htmlFor="person"
+            >
+              Person:
+            </label>
+            <input
+              className="input-person"
+              name="person"
+              onChange={[Function]}
+              type="text"
+            />
+            <label
+              htmlFor="present"
+            >
+              Present:
+            </label>
+            <input
+              className="input-present"
+              name="present"
+              onChange={[Function]}
+              type="text"
+            />
+          </form>,
+          <button
+            className="btn-remove"
+            onClick={[Function]}
           >
-            Person:
-          </label>,
-          <input
-            className="input-person"
-            name="person"
-            onChange={[Function]}
-            type="text"
-          />,
-          <label
-            htmlFor="present"
-          >
-            Present:
-          </label>,
-          <input
-            className="input-present"
-            name="present"
-            onChange={[Function]}
-            type="text"
-          />,
+            Remove Gift
+          </button>,
         ],
       },
       "ref": null,
@@ -137,55 +208,103 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "Person:",
-            "htmlFor": "person",
+            "children": Array [
+              <label
+                htmlFor="person"
+              >
+                Person:
+              </label>,
+              <input
+                className="input-person"
+                name="person"
+                onChange={[Function]}
+                type="text"
+              />,
+              <label
+                htmlFor="present"
+              >
+                Present:
+              </label>,
+              <input
+                className="input-present"
+                name="present"
+                onChange={[Function]}
+                type="text"
+              />,
+            ],
           },
           "ref": null,
-          "rendered": "Person:",
-          "type": "label",
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Person:",
+                "htmlFor": "person",
+              },
+              "ref": null,
+              "rendered": "Person:",
+              "type": "label",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "input-person",
+                "name": "person",
+                "onChange": [Function],
+                "type": "text",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Present:",
+                "htmlFor": "present",
+              },
+              "ref": null,
+              "rendered": "Present:",
+              "type": "label",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "input-present",
+                "name": "present",
+                "onChange": [Function],
+                "type": "text",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+          ],
+          "type": "form",
         },
         Object {
           "instance": null,
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "className": "input-person",
-            "name": "person",
-            "onChange": [Function],
-            "type": "text",
+            "children": "Remove Gift",
+            "className": "btn-remove",
+            "onClick": [Function],
           },
           "ref": null,
-          "rendered": null,
-          "type": "input",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": "Present:",
-            "htmlFor": "present",
-          },
-          "ref": null,
-          "rendered": "Present:",
-          "type": "label",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "className": "input-present",
-            "name": "present",
-            "onChange": [Function],
-            "type": "text",
-          },
-          "ref": null,
-          "rendered": null,
-          "type": "input",
+          "rendered": "Remove Gift",
+          "type": "button",
         },
       ],
-      "type": "form",
+      "type": "div",
     },
   ],
   Symbol(enzyme.__options__): Object {

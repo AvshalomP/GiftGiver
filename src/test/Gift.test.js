@@ -4,17 +4,20 @@ import Gift from '../components/Gift';
 
 
 describe('Gift', () => {
-   const gift = shallow(<Gift />);
+    const mockRemove = jest.fn();
+    const id = 1;
+    const props = { gift: { id }, handleRemove: mockRemove };
+    const gift = shallow(<Gift {...props}/>);
 
-   it('should render properly', () => {
+    it('should render properly', () => {
       expect(gift).toMatchSnapshot();
-   });
+    });
 
-   it('initializes a person and present in `state`', () => {
+    it('initializes a person and present in `state`', () => {
       expect(gift.state()).toEqual({ person: "", present: "" });
-   });
+    });
 
-   describe('when typing into the person input', () => {
+    describe('when typing into the person input', () => {
       const person = 'Uncle';
 
       beforeEach(() => {
@@ -24,9 +27,9 @@ describe('Gift', () => {
       it('updates the person in `state`', () => {
           expect(gift.state().person).toEqual(person);
       })
-   });
+    });
 
-   describe('when typing into the present input', () => {
+    describe('when typing into the present input', () => {
       const present = 'Wine';
 
       beforeEach(() => {
@@ -36,6 +39,16 @@ describe('Gift', () => {
       it('updates the present in `state`', () => {
           expect(gift.state().present).toEqual(present);
       });
-   });
+    });
+
+    describe('when clicking the `Remove Gift` button', () => {
+      beforeEach(() => {
+          gift.find('.btn-remove').simulate('click');
+      });
+
+      it('calls the removeGift callback', () => {
+          expect(mockRemove).toHaveBeenCalledWith(id);
+      });
+    });
 });
 

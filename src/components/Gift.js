@@ -14,16 +14,24 @@ class Gift extends Component {
     };
 
     render(){
+        const { handleRemove, gift } = this.props;
         return (
-            <form>
-                <label htmlFor="person">Person:</label>
-                <input type="text" className="input-person" name="person"
-                       onChange={this.handleChange}/>
-                <label htmlFor="present">Present:</label>
-                <input type="text" className="input-present" name="present"
-                       onChange={this.handleChange}
-                />
-            </form>
+            <div>
+                <form>
+                    <label htmlFor="person">Person:</label>
+                    <input type="text" className="input-person" name="person"
+                           onChange={this.handleChange}/>
+                    <label htmlFor="present">Present:</label>
+                    <input type="text" className="input-present" name="present"
+                           onChange={this.handleChange}
+                    />
+                </form>
+                <button className="btn-remove"
+                        onClick={handleRemove.bind(this, gift.id)}
+                >
+                    Remove Gift
+                </button>
+            </div>
         )
     }
 }

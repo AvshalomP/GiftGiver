@@ -18,9 +18,17 @@ class App extends Component {
         this.setState({ gifts });
     };
 
+    removeGift = (id) => {
+        const gifts = this.state.gifts.filter( gift => gift.id!==id );
+
+        this.setState({ gifts });
+    };
+
     render(){
         const giftsList = this.state.gifts.map( gift => {
-           return ( <Gift key={gift.id}>{`gift #${gift.id}`}</Gift>)
+           return ( <Gift key={gift.id} gift={gift}
+                          handleRemove={this.removeGift}
+           />)
         });
 
         return(
