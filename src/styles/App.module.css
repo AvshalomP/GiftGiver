@@ -1,0 +1,14 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.btn {
+    composes: btn from '../index.css';
+    background: forestgreen;
+    color: white;
+    text-decoration: none;
+}

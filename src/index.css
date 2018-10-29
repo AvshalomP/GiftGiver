@@ -8,6 +8,19 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.btn {
+  font-size: 1em;
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+  margin: 20px;
+  text-shadow: black;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;

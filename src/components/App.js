@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import styles from '../styles/App.module.css';
 import Gift from './Gift';
 import { maxNumber } from '../helper';
 
@@ -26,16 +27,16 @@ class App extends Component {
 
     render(){
         const giftsList = this.state.gifts.map( gift => {
-           return ( <Gift key={gift.id} gift={gift}
-                          handleRemove={this.removeGift}
-           />)
+           return ( <Gift key={gift.id} gift={gift} handleRemove={this.removeGift}/> )
         });
 
         return(
-            <div>
-                <h2>Gift Giver</h2>
-                <div className="gift-list">{giftsList}</div>
-                <button className="btn-add" onClick={this.handleAddGift}>Add Gift</button>
+            <div className={styles.container}>
+                <h1>Gift Giver</h1>
+                <div className="gift-list">
+                    {giftsList}
+                </div>
+                <a id="addBtn" href="#addBtn" className={styles.btn} onClick={this.handleAddGift}>Add Gift</a>
             </div>
         )
     }

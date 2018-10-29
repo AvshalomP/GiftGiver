@@ -43,7 +43,7 @@ describe('Gift', () => {
 
     describe('when clicking the `Remove Gift` button', () => {
       beforeEach(() => {
-          gift.find('.btn-remove').simulate('click');
+          gift.find('#removeBtn').simulate('click');
       });
 
       it('calls the removeGift callback', () => {

@@ -1,0 +1,44 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60vw;
+    border: #c8c8c8 solid 1px;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 0 10px;
+}
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+}
+
+input {
+    width: 90%;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 1em;
+    border: #c8c8c8 solid 1px;
+    border-radius: 5px;
+    outline: none;
+}
+
+input:focus {
+    box-shadow: 0 0 3px coral;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.btn {
+    composes: btn from '../index.css';
+    background: red;
+    color: white;
+}
+

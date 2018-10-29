@@ -18,7 +18,7 @@ describe('App', () => {
         const id = 1;
 
         beforeEach(() => {
-            app.find('.btn-add').simulate('click');
+            app.find('#addBtn').simulate('click');
         });
 
         afterEach(() => {

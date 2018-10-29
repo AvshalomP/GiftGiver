@@ -25,11 +25,13 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <form>
+        <form
+          className="formContainer"
+        >
           <label
             htmlFor="person"
           >
-            Person:
+            Person
           </label>
           <input
             className="input-person"
@@ -40,7 +42,7 @@ ShallowWrapper {
           <label
             htmlFor="present"
           >
-            Present:
+            Present
           </label>
           <input
             className="input-present"
@@ -50,12 +52,14 @@ ShallowWrapper {
           />
         </form>,
         <button
-          className="btn-remove"
+          className="btn"
+          id="removeBtn"
           onClick={[Function]}
         >
           Remove Gift
         </button>,
       ],
+      "className": "container",
     },
     "ref": null,
     "rendered": Array [
@@ -68,7 +72,7 @@ ShallowWrapper {
             <label
               htmlFor="person"
             >
-              Person:
+              Person
             </label>,
             <input
               className="input-person"
@@ -79,7 +83,7 @@ ShallowWrapper {
             <label
               htmlFor="present"
             >
-              Present:
+              Present
             </label>,
             <input
               className="input-present"
@@ -88,6 +92,7 @@ ShallowWrapper {
               type="text"
             />,
           ],
+          "className": "formContainer",
         },
         "ref": null,
         "rendered": Array [
@@ -96,11 +101,11 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "Person:",
+              "children": "Person",
               "htmlFor": "person",
             },
             "ref": null,
-            "rendered": "Person:",
+            "rendered": "Person",
             "type": "label",
           },
           Object {
@@ -122,11 +127,11 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "Present:",
+              "children": "Present",
               "htmlFor": "present",
             },
             "ref": null,
-            "rendered": "Present:",
+            "rendered": "Present",
             "type": "label",
           },
           Object {
@@ -152,7 +157,8 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": "Remove Gift",
-          "className": "btn-remove",
+          "className": "btn",
+          "id": "removeBtn",
           "onClick": [Function],
         },
         "ref": null,
@@ -169,11 +175,13 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <form>
+          <form
+            className="formContainer"
+          >
             <label
               htmlFor="person"
             >
-              Person:
+              Person
             </label>
             <input
               className="input-person"
@@ -184,7 +192,7 @@ ShallowWrapper {
             <label
               htmlFor="present"
             >
-              Present:
+              Present
             </label>
             <input
               className="input-present"
@@ -194,12 +202,14 @@ ShallowWrapper {
             />
           </form>,
           <button
-            className="btn-remove"
+            className="btn"
+            id="removeBtn"
             onClick={[Function]}
           >
             Remove Gift
           </button>,
         ],
+        "className": "container",
       },
       "ref": null,
       "rendered": Array [
@@ -212,7 +222,7 @@ ShallowWrapper {
               <label
                 htmlFor="person"
               >
-                Person:
+                Person
               </label>,
               <input
                 className="input-person"
@@ -223,7 +233,7 @@ ShallowWrapper {
               <label
                 htmlFor="present"
               >
-                Present:
+                Present
               </label>,
               <input
                 className="input-present"
@@ -232,6 +242,7 @@ ShallowWrapper {
                 type="text"
               />,
             ],
+            "className": "formContainer",
           },
           "ref": null,
           "rendered": Array [
@@ -240,11 +251,11 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "Person:",
+                "children": "Person",
                 "htmlFor": "person",
               },
               "ref": null,
-              "rendered": "Person:",
+              "rendered": "Person",
               "type": "label",
             },
             Object {
@@ -266,11 +277,11 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "Present:",
+                "children": "Present",
                 "htmlFor": "present",
               },
               "ref": null,
-              "rendered": "Present:",
+              "rendered": "Present",
               "type": "label",
             },
             Object {
@@ -296,7 +307,8 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": "Remove Gift",
-            "className": "btn-remove",
+            "className": "btn",
+            "id": "removeBtn",
             "onClick": [Function],
           },
           "ref": null,
