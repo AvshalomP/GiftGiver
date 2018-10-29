@@ -5,7 +5,7 @@ A simple React.js web application that was implemented in a TDD approach using J
 
 * Manage gifts with basic functionalities:
 
-  * add gift
+  * Add gift
   
   * Delete gift
 
